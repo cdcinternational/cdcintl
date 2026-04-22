@@ -94,7 +94,7 @@
                   <p class="section-tag">Creative Arts</p>
                   <h2>
                     Fashion, Interior
-                    <span>& Graphic Design</span>
+                    <span>& Graphics</span>
                   </h2>
                   <p class="hero-text">
                     Master the world of design. From spatial planning and textiles to digital branding, our specialized creative programs prepare you for the global design industry.
@@ -348,9 +348,9 @@
 
       // Color schemes for each slide
       const slideThemes = [
-        // AI & Programming - Blue/Purple
+        // AI & Programming
         {
-          background: 'linear-gradient(135deg, #1e3a5f 0%, #4b0082 50%, #8a2be2 100%)',
+          background: "linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('assets/AI_programming.png')",
           badge: 'Future Tech',
           stats: [
             { number: '12+', label: 'Coding languages' },
@@ -358,9 +358,9 @@
             { number: '24/7', label: 'Cloud access' }
           ]
         },
-        // BIM & Architecture - Teal/Grey
+        // BIM & Architecture
         {
-          background: 'linear-gradient(135deg, #004d40 0%, #26a69a 50%, #b0bec5 100%)',
+          background: "linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('assets/bim_architecture.png')",
           badge: 'Engineering',
           stats: [
             { number: '5+', label: 'BIM softwares' },
@@ -368,9 +368,9 @@
             { number: 'Global', label: 'Standards' }
           ]
         },
-        // DreamZone - Pink/Gold/Teal
+        // Creative
         {
-          background: 'linear-gradient(135deg, #54193d, #d77aa6 40%, #b19266 70%, #f4cb8f 100%)',
+          background: "linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('assets/fashion_graphics_interior.png')",
           badge: 'Creative',
           stats: [
             { number: '3-in-1', label: 'Design hub' },
@@ -378,9 +378,9 @@
             { number: 'Expert', label: 'Mentorship' }
           ]
         },
-        // Data & Finance - Deep Green/Gold
+        // Data & Finance
         {
-          background: 'linear-gradient(135deg, #1b3022 0%, #2e7d32 60%, #ffd700 100%)',
+          background: "linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('assets/finance_data_analysis.png')",
           badge: 'Data & Finance',
           stats: [
             { number: '10+', label: 'Analytic tools' },
@@ -388,9 +388,9 @@
             { number: 'Real', label: 'Financial data' }
           ]
         },
-        // Management & Marketing - Orange/Navy
+        // Management & Marketing
         {
-          background: 'linear-gradient(135deg, #2d1f0e, #ff8f00 60%, #000080 100%)',
+          background: "linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('assets/hr_sales.png')",
           badge: 'Management',
           stats: [
             { number: '100%', label: 'Placement aid' },
@@ -414,7 +414,7 @@
 
       function updatePortraitFrame(index) {
         const theme = slideThemes[index];
-        portraitFrame.style.background = theme.background;
+        portraitFrame.style.backgroundImage = theme.background;
         document.querySelector('.hero-badge').textContent = theme.badge;
         
         // Update stats
