@@ -710,56 +710,38 @@ img {
   border: 1px solid rgba(255, 210, 21, 0.1);
   background: var(--panel-soft);
   box-shadow: var(--shadow);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.showcase-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 210, 21, 0.4);
 }
 
 .showcase-card::before {
   content: "";
   position: absolute;
   inset: 0;
-  opacity: 0.92;
+  background: linear-gradient(180deg, rgba(9, 9, 11, 0.2) 0%, rgba(9, 9, 11, 0.85) 100%);
+  z-index: 0;
+  transition: opacity 0.4s ease;
 }
 
-.dreamzone-card::before {
-  background:
-    linear-gradient(180deg, rgba(18, 8, 14, 0.28), rgba(18, 8, 14, 0.8)),
-    linear-gradient(135deg, #54193d, #d77aa6 40%, #b19266 70%, #f4cb8f 100%);
+.showcase-card:hover::before {
+  opacity: 0.7;
 }
 
-.marketing-card::before {
-  background:
-    linear-gradient(180deg, rgba(24, 24, 27, 0.22), rgba(24, 24, 27, 0.82)),
-    linear-gradient(135deg, #18181b, #3f3f46 60%, var(--accent) 100%);
-}
-
-.ai-card::before {
-  background:
-    linear-gradient(180deg, rgba(30, 58, 95, 0.22), rgba(10, 10, 12, 0.82)),
-    linear-gradient(135deg, #1e3a5f, #4b0082 50%, #8a2be2 100%);
-}
-
-.bim-card::before {
-  background:
-    linear-gradient(180deg, rgba(0, 77, 64, 0.22), rgba(10, 10, 12, 0.82)),
-    linear-gradient(135deg, #004d40, #26a69a 50%, #b0bec5 100%);
-}
-
-.cyber-card::before {
-  background:
-    linear-gradient(180deg, rgba(139, 0, 0, 0.22), rgba(10, 10, 12, 0.82)),
-    linear-gradient(135deg, #8b0000, #ff4500 50%, #000000 100%);
-}
-
-.data-card::before {
-  background:
-    linear-gradient(180deg, rgba(27, 48, 34, 0.22), rgba(10, 10, 12, 0.82)),
-    linear-gradient(135deg, #1b3022, #2e7d32 60%, #ffd700 100%);
-}
-
-.hr-card::before {
-  background:
-    linear-gradient(180deg, rgba(45, 31, 14, 0.22), rgba(10, 10, 12, 0.82)),
-    linear-gradient(135deg, #2d1f0e, #ff8f00 60%, #000080 100%);
-}
+.ai-card { background-image: url('assets/programs/AI_Programming.png'); }
+.bim-card { background-image: url('assets/programs/BIM_Architecture.png'); }
+.dreamzone-card { background-image: url('assets/programs/interior_fashion_graphics.png'); }
+.cyber-card { background-image: url('assets/programs/Cybersecurity.png'); }
+.data-card { background-image: url('assets/programs/Analysis.png'); }
+.hr-card { background-image: url('assets/programs/hr_sales.png'); }
 
 .card-copy {
   position: absolute;
