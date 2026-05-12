@@ -409,7 +409,7 @@ img {
 .hero-card {
   position: relative;
   width: min(100%, 460px);
-  border-radius: 28px;
+  border-radius: 0;
   padding: 0.1rem;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.03)),
@@ -420,7 +420,7 @@ img {
 
 .portrait-frame {
   min-height: 520px;
-  border-radius: 22px;
+  border-radius: 0;
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -454,7 +454,7 @@ img {
   background: var(--accent);
   color: #111;
   font-weight: 800;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
   box-shadow: var(--shadow);
 }
 
@@ -623,7 +623,6 @@ img {
 
 .mini-badge {
   padding: 0.95rem 1.1rem;
-  border-radius: 999px;
   border: 1px solid rgba(255, 210, 21, 0.2);
   color: var(--muted);
   background: rgba(255, 210, 21, 0.05);
@@ -1275,13 +1274,13 @@ img {
     width: 100%;
     max-width: 340px;
     padding: 0.1rem;
-    border-radius: 20px;
+    border-radius: 0;
     border: 0.5px solid rgba(255, 210, 21, 0.12);
   }
 
   .portrait-frame {
     min-height: 320px;
-    border-radius: 16px;
+    border-radius: 0;
   }
 
   .hero-badge {
@@ -1291,7 +1290,6 @@ img {
     transform: none;
     padding: 0.65rem 0.95rem;
     font-size: 0.9rem;
-    border-radius: 8px;
   }
 
   /* Mobile Trust Band */
